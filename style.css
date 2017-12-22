@@ -1,21 +1,155 @@
 body {
-margin: 0px;
+  margin: 0px;
+  background-color: #3f2313;
 }
 
-.first_color{
+/* *******************************containers******************************* */
+
+.container {
   width: 100%;
   height: 100vh;
-  background-color: #E74C3C;
 }
 
+/* *******************************Navbar******************************* */
+
+.nav_bar {
+  position: absolute;
+  background-image: url("navbar.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  width: 100%;
+  height: 165px;
+  z-index: 10;
+}
+.nav_color{
+  background-color: #E9CFB4;
+  height: 120px;
+  transition: 1s;
+}
+
+.nav_buttons_container {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav_buttons {
+  height: 60px;
+  width: 200px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  font-family: 'Barlow', sans-serif;
+}
+
+#nav_logo_img {
+  background-image: url("Pagoda-02-01.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+#about_nav_button {
+  margin-left: 20px;
+}
+
+#pagoda_nav_button {}
+
+#food_nav_button {}
+
+#coffee_nav_button {}
+
+.stuck {
+  position: fixed;
+  top: 0
+}
+
+/* *******************************Intro******************************* */
+
+#intro_section {
+  position: fixed;
+  width: 100%;
+  height: 88vh;
+  background-color: #3f2313;
+  background-image: url("Pagoda-02-01.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.welcome_text_container {
+  bottom: 38%;
+  right: 8%;
+  width: 22%;
+  line-height: 100px;
+  position: absolute;
+  text-align: center;
+  color: #F4BB15;
+}
+
+.welcome_font {
+  font-size: 132px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.yangon_font {
+  font-family: 'Josefin Slab', serif;
+  font-size: 50px;
+}
+
+/* *******************************First Section******************************* */
+
+#first_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #E9CFB4;
+  z-index: 3;
+}
+
+/* *******************************Second Section******************************* */
+
+#second_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #E36455;
+  z-index: 4;
+}
+
+/* *******************************Third Section******************************* */
+
+#third_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #AEC4C2;
+  z-index: 5;
+}
+
+/* *******************************Fourth Section******************************* */
+
+#fourth_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #F4BB15;
+  z-index: 6;
+}
+
+/* *******************************Media Querys******************************* */
+
 @media only screen and (max-width: 768px) {
-  .first_color{
+  .first_color {
     background-color: blue;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .first_color{
+  .first_color {
     background-color: brown;
   }
 }
